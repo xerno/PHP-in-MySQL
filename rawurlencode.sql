@@ -18,7 +18,7 @@ CREATE FUNCTION rawurlencode(input TEXT)
 
       IF input IS NULL THEN  -- protection against freezing
          RETURN input;
-      ELSEIF input REGEXP "[^A-Za-z0-9_.~-]+$" THEN  -- speed-up
+      ELSEIF input REGEXP "^[A-Za-z0-9_.~-]+$" THEN  -- speed-up
          RETURN input;
       END IF;
 
