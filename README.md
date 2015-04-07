@@ -1,4 +1,4 @@
-# PHP in MySQL
+# PHP functions in MySQL
 
 Make your apps clearer for reading. Use functions you know from PHP in your MySQL queries. Learn differencies and how MySQL works
 
