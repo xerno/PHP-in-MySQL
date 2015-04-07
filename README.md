@@ -1,6 +1,6 @@
-# PHP in MySQL
+# PHP functions in MySQL
 
-Make your apps clearer for reading. Use functions you know from PHP in your MySQL queries. Learn differencies and how MySQL works
+Make your apps clearer for reading. Use functions you know from PHP in your MySQL queries. Learn differencies and how MySQL works.
 
 ## Install
 Installation is really simple. Every MySQL function and procedure is stored in database. So you must include to it only. And it is. Every function you can install separately.
@@ -21,3 +21,18 @@ Installation is really simple. Every MySQL function and procedure is stored in d
 - Download a function you want and execute following commands (with uppercased text replacement):
 - use DATABASE;
 - source ./PATH/FUNCTION_NAME.sql
+
+## Compatibility
+All functions are tested on MySQL 5.5 but may function in older versions too. If problems, please inform me.
+
+## Same functions
+Many of php string functions are in the MySQL too, with same usage but with another name:
+- LENGTH() -> mb_strlen(): be careful, it returns count of chars, not a bit length as strlen()
+- REPLACE() -> str_replace()
+- REPEAT() -> str_repeat()
+- REVERSE() -> strrev()
+- TRIM() -> trim()
+- LOWER() -> mb_strtolower(): strtolower without mistakes :)
+- UPPER() -> mb_strtoupper(): the same as above
+
+> And others...
