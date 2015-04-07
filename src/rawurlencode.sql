@@ -22,9 +22,7 @@ CREATE FUNCTION rawurlencode(input TEXT)
       DECLARE temp_length TINYINT;
       DECLARE p TINYINT;
 
-      IF input IS NULL THEN  -- protection against freezing
-         RETURN input;
-      ELSEIF input REGEXP "^[A-Za-z0-9_.~-]+$" THEN  -- speed-up
+      IF input IS NULL OR input REGEXP "^[A-Za-z0-9_.~-]+$" THEN  -- protection against freezing and speed-up
          RETURN input;
       END IF;
 

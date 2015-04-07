@@ -32,10 +32,8 @@ CREATE FUNCTION str_pad(
          RETURN input;
       END IF;
 
-      SET length = LENGTH(input);
-      IF pad_length<1 THEN
-         return input;
-      ELSEIF pad_length<=length THEN
+      SET length = CHAR_LENGTH(input);
+      IF pad_length<1 OR pad_length<=length THEN
          return input;
       END IF;
 
