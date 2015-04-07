@@ -1,5 +1,5 @@
 
--- Name: Pad a string to a certain length with another string, like str_repeat() from PHP
+-- Name: Pad a string to a certain length with another string, like str_pad() from PHP
 -- Author: Zdenek Kops, https://github.com/xerno
 -- Year: 2015
 -- Difference: you have to call function with all arguments, at least with empty strings
@@ -16,7 +16,7 @@ CREATE FUNCTION str_pad(
       pad_type TEXT     -- at least empty string, will be changed to "STR_PAD_RIGHT"
    )
    RETURNS TEXT
-   COMMENT "Pad a string to a certain length with another string, like PHP's str_repeat(). https://github.com/xerno/PHP-in-MySQL"
+   COMMENT "Pad a string to a certain length with another string, like PHP's str_pad(). https://github.com/xerno/PHP-in-MySQL"
    LANGUAGE SQL
    DETERMINISTIC
    BEGIN
