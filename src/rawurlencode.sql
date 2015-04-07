@@ -1,10 +1,16 @@
+
+-- Name: URL-encode according to RFC 3986, like rawurlencode() from PHP
+-- Author: Zdenek Kops, https://github.com/xerno
+-- Year: 2015
+
+
 DROP FUNCTION IF EXISTS rawurlencode;
 
 DELIMITER $$
 
 CREATE FUNCTION rawurlencode(input TEXT)
    RETURNS TEXT
-   COMMENT "URL-encode according to RFC 3986, like PHP's rawurlencode()."
+   COMMENT "URL-encode according to RFC 3986, like PHP's rawurlencode(). https://github.com/xerno/PHP-in-MySQL"
    LANGUAGE SQL
    DETERMINISTIC
    BEGIN
