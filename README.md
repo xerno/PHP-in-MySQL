@@ -1,6 +1,6 @@
 # PHP functions in MySQL
 
-Make your apps clearer for reading. Use functions you know from PHP in your MySQL queries. Learn differencies and how MySQL works
+Make your apps clearer for reading. Use functions you know from PHP in your MySQL queries. Learn differencies and how MySQL works.
 
 ## Install
 Installation is really simple. Every MySQL function and procedure is stored in database. So you must include to it only. And it is. Every function you can install separately.
@@ -21,3 +21,6 @@ Installation is really simple. Every MySQL function and procedure is stored in d
 - Download a function you want and execute following commands (with uppercased text replacement):
 - use DATABASE;
 - source ./PATH/FUNCTION_NAME.sql
+
+## Compatibility
+All functions are tested on MySQL 5.5 but may function in older versions too. If problems, please inform me.
