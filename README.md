@@ -29,11 +29,11 @@ All functions are tested on MySQL 5.1 and 5.5, many functions are universal and 
 Many of php string functions are in the MySQL too, with same usage but with another name:
 - LENGTH() -> strlen()
 - CHAR_LENGTH() -> mb_strlen()
+- TRIM() -> trim(): [see documentation](https://dev.mysql.com/doc/refman/5.0/en/string-functions.html#function_trim) for options
 - REPLACE() -> str_replace()
 - REPEAT() -> str_repeat()
 - REVERSE() -> strrev()
-- TRIM() -> trim(): [see documentation](https://dev.mysql.com/doc/refman/5.0/en/string-functions.html#function_trim) for options
-- LOWER() -> mb_strtolower(): strtolower without1 mistakes :)
+- LOWER() -> mb_strtolower(): strtolower without mistakes :)
 - UPPER() -> mb_strtoupper(): the same as above
 - LOCATE() -> strpos()
 - SUBSTRING() -> mb_substr(): point starts at 1, not 0
