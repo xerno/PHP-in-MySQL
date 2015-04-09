@@ -35,7 +35,7 @@ Many of php string functions are in the MySQL too, with same usage but with anot
 - REVERSE() -> strrev()
 - LOWER() -> mb_strtolower(): strtolower without mistakes :)
 - UPPER() -> mb_strtoupper(): the same as above
-- LOCATE() -> strpos()
+- INSTR() -> strpos()
 - SUBSTRING() -> mb_substr(): point starts at 1, not 0
 
 > And more...
