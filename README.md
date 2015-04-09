@@ -23,7 +23,7 @@ Installation is really simple. Every MySQL function and procedure is stored in d
 - source ./PATH/FUNCTION_NAME.sql
 
 ## Compatibility
-All functions are tested on MySQL 5.5 but may function in older versions too. If problems, please inform me.
+All functions are tested on MySQL 5.1 and 5.5, many functions are universal and can run without problems in another versions. If problems in any version major 5 or greater (MariaDB), please inform me.
 
 ## Same functions
 Many of php string functions are in the MySQL too, with same usage but with another name:
@@ -32,10 +32,10 @@ Many of php string functions are in the MySQL too, with same usage but with anot
 - REPLACE() -> str_replace()
 - REPEAT() -> str_repeat()
 - REVERSE() -> strrev()
-- TRIM() -> trim()
-- LOWER() -> mb_strtolower(): strtolower without mistakes :)
+- TRIM() -> trim(): [see documentation](https://dev.mysql.com/doc/refman/5.0/en/string-functions.html#function_trim) for options
+- LOWER() -> mb_strtolower(): strtolower without1 mistakes :)
 - UPPER() -> mb_strtoupper(): the same as above
 - LOCATE() -> strpos()
-- SUBSTRING() -> mb_strpos()
+- SUBSTRING() -> mb_substr(): point starts at 1, not 0
 
-> And others...
+> And more...
