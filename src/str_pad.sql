@@ -10,8 +10,8 @@ DROP FUNCTION IF EXISTS str_pad;
 DELIMITER $$
 
 CREATE FUNCTION str_pad(
-      input TEXT,       -- reuquired
-      pad_length INT,   -- reuquired
+      input TEXT,       -- required
+      pad_length INT,   -- required
       pad_string TEXT,  -- at least empty string, will be changed to a space
       pad_type TEXT     -- at least empty string, will be changed to "STR_PAD_RIGHT"
    )
