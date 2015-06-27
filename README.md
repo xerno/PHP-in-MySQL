@@ -2,6 +2,9 @@
 
 Make your apps clearer for reading. Use functions you know from PHP in your MySQL queries. Learn differencies and how MySQL works.
 
+## Compatibility
+All functions are tested on MySQL 5.1, 5.5 and MariaDB 5.5, 10. Many functions are universal and can run without any problem in another versions. If problems in any version major 5 or greater, please inform me. Contributions are welcome.
+
 ## Install
 Installation is really simple. Every MySQL function and procedure is stored in database. So you must include to it only. And it is. Every function you can install separately.
 
@@ -22,11 +25,8 @@ Installation is really simple. Every MySQL function and procedure is stored in d
 - use DATABASE;
 - source ./PATH/FUNCTION_NAME.sql
 
-## Compatibility
-All functions are tested on MySQL 5.1 and 5.5, many functions are universal and can run without problems in another versions. If problems in any version major 5 or greater (MariaDB), please inform me.
-
 ## Same functions
-Many of php string functions are in the MySQL too, with same usage but with another name:
+Many of PHP string functions are in the MySQL too, with same or very similar usage but with another name:
 - LENGTH() -> strlen()
 - CHAR_LENGTH() -> mb_strlen()
 - TRIM() -> trim(): [see documentation](https://dev.mysql.com/doc/refman/5.0/en/string-functions.html#function_trim) for options
